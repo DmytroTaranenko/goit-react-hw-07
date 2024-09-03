@@ -7,7 +7,7 @@ const Contact = ({ contact, onDeleteContact }) => {
       <div className={css.contactWrapper}>
         <div className={css.contactDetails}>
           <FaUserLarge className={css.contactIcon} />
-          <p>{contact.name}</p>
+          <p className={css.contactTitle}>{contact.name}</p>
         </div>
         <div className={css.contactDetails}>
           <FaPhone className={css.contactIcon} />

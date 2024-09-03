@@ -75,8 +75,8 @@ const ContactForm = () => {
             className={css.errorText}
             name="userNumber"
             component="span"
-          />
-        </label>
+            />
+            </label>
         <button type="submit">Add contact</button>
       </Form>
     </Formik>

@@ -1,8 +1,8 @@
 .contactList {
-  display: flex;
-  gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(412px,1fr));
+  gap: 10px;
   padding: 0;
-  flex-direction: column;
-  flex-wrap: wrap;
-  height: 800px;
+  width: 100%;
+  margin: 0 auto;
 }
