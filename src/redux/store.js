@@ -14,17 +14,9 @@ import {
   REGISTER,
 } from "redux-persist";
 
-import storage from "redux-persist/lib/storage";
-
-const contactsConfig = {
-  key: "contactsKey",
-  storage,
-  whitelist: ["items"],
-};
-
 export const store = configureStore({
   reducer: {
-    contacts: persistReducer(contactsConfig, contactsReducer),
+    contacts: contactsReducer,
     filters: filterReducer,
   },
   middleware: (getDefaultMiddleware) =>
